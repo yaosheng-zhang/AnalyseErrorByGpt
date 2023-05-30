@@ -1,0 +1,66 @@
+2023-04-30 17:48:39  [ main:0 ] - [ DEBUG ]  开始工作
+2023-04-30 17:48:45  [ main:6192 ] - [ DEBUG ]  确实，使用八进制表示数字容易引起混淆，应该使用十进制或十六进制表示。以下是重构后的代码：
+
+int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 511; // 使用十进制表示最大数值
+    using namespace msr::airlib;
+
+    StandAlonePhysics::testCollision();
+
+    return 0;
+}
+2023-04-30 17:50:03  [ main:0 ] - [ DEBUG ]  开始工作
+2023-04-30 17:50:08  [ main:4755 ] - [ DEBUG ]  // 重构后的代码
+int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber=377; // 使用十进制表示最大值
+    using namespace msr::airlib;
+
+    StandAlonePhysics::testCollision();
+
+    return 0;
+} 
+
+// 提示：在代码中避免使用八进制表示数字，因为容易引起混淆和错误。建议使用十进制或十六进制表示数字。
+2023-04-30 17:50:38  [ main:0 ] - [ DEBUG ]  开始工作
+2023-04-30 17:50:47  [ main:0 ] - [ DEBUG ]  开始工作
+2023-04-30 17:50:53  [ main:0 ] - [ DEBUG ]  开始工作
+2023-04-30 17:51:06  [ main:0 ] - [ DEBUG ]  开始工作
+2023-04-30 20:08:55  [ main:0 ] - [ DEBUG ]  开始工作
+2023-04-30 20:09:16  [ main:0 ] - [ DEBUG ]  开始工作
+2023-04-30 22:35:30  [ main:0 ] - [ DEBUG ]  开始工作
+2023-04-30 22:36:21  [ main:0 ] - [ DEBUG ]  开始工作
+2023-04-30 22:36:24  [ main:3300 ] - [ DEBUG ]  /* 重构后的代码 */
+int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber=383; // 将八进制数0577改为十进制数383
+    using namespace msr::airlib;
+
+    StandAlonePhysics::testCollision();
+
+    return 0;
+}
+2023-04-30 22:53:37  [ main:0 ] - [ DEBUG ]  // 重构后的代码：
+int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber=377;
+    using namespace msr::airlib;
+
+    StandAlonePhysics::testCollision();
+
+    return 0;
+}
+
+// JAVA注释：
+/*
+ * 重构后的代码：
+ */
+int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber=377;
+    using namespace msr::airlib;
+
+    StandAlonePhysics::testCollision();
+
+    return 0;
+} 
+
+/*
+ * 提示：八进制常量在C++11标准中已经不再推荐使用，应该使用十进制常量。
+ */

@@ -1,0 +1,263 @@
+2023-05-07 11:12:50  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main(){
+  int i = 0;
+  
+  while (i < 10)
+  {
+    /* do something */
+    if (i == 5)
+    {
+      goto end;
+    }
+    i++;
+  }
+  
+  end:
+  /* return statement */
+}
+```
+< The goto statement should not be used>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-07 11:12:55  [ main:4880 ] - [ DEBUG ]  // 重构后的代码如下：
+int main(){
+  int i = 0;
+  
+  while (i < 10)
+  {
+    /* do something */
+    if (i == 5)
+    {
+      break;
+    }
+    i++;
+  }
+  
+  /* return statement */
+}
+2023-05-07 11:12:55  [ main:4880 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```enum colors {red, green, blue};```
+< Rule 8.4：枚举类型的标识符应该以字母E开头。>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-07 11:12:57  [ main:6976 ] - [ DEBUG ]  // 重构后的代码如下：
+enum EColors {red, green, blue}; // 枚举类型的标识符以字母E开头
+2023-05-07 11:12:57  [ main:6976 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void function(int a, int b){
+  int c = a + b;
+  
+  if (c < a)
+  {
+    /* do something */
+  }
+  else
+  {
+    /* do something else */
+  }
+}
+```
+< The goto statement should not be used>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-07 11:13:00  [ main:9761 ] - [ DEBUG ]  // 重构后的代码如下：
+void function(int a, int b){
+  int c;
+  if (b > INT_MAX - a) {
+    /* handle error */
+  } else {
+    c = a + b;
+    if (c < a)
+    {
+      /* do something */
+    }
+    else
+    {
+      /* do something else */
+    }
+  }
+}
+2023-05-07 11:13:00  [ main:9761 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void function(int *p){
+  *(p + 1) = 10;
+}
+```
+< >
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-07 11:17:42  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main(){
+  int i = 0;
+  
+  while (i < 10)
+  {
+    /* do something */
+    if (i == 5)
+    {
+      goto end;
+    }
+    i++;
+  }
+  
+  end:
+  /* return statement */
+}
+```
+< The goto statement should not be used>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-07 11:17:45  [ main:3718 ] - [ DEBUG ]  // 重构后的代码如下：
+int main(){
+  int i = 0;
+  
+  while (i < 10)
+  {
+    /* do something */
+    if (i == 5)
+    {
+      break;
+    }
+    i++;
+  }
+  
+  /* return statement */
+}
+2023-05-07 11:17:46  [ main:4720 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```enum colors {red, green, blue};```
+< Rule 8.4：枚举类型的标识符应该以字母E开头。>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-07 11:17:48  [ main:6906 ] - [ DEBUG ]  // 重构后的代码如下：
+enum EColors {red, green, blue}; // 枚举类型的标识符以字母E开头
+2023-05-07 11:17:50  [ main:7915 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void function(int a, int b){
+  int c = a + b;
+  
+  if (c < a)
+  {
+    /* do something */
+  }
+  else
+  {
+    /* do something else */
+  }
+}
+```
+< The goto statement should not be used>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-07 11:17:52  [ main:10815 ] - [ DEBUG ]  // 重构后的代码如下：
+void function(int a, int b){
+  int c;
+  if (b > INT_MAX - a) {
+    /* handle error */
+  } else {
+    c = a + b;
+    if (c < a)
+    {
+      /* do something */
+    }
+    else
+    {
+      /* do something else */
+    }
+  }
+}
+2023-05-07 11:17:53  [ main:11827 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void function(int *p){
+  *(p + 1) = 10;
+}
+```
+< >
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-07 22:24:42  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main(){
+  int i = 0;
+  
+  while (i < 10)
+  {
+    /* do something */
+    if (i == 5)
+    {
+      goto end;
+    }
+    i++;
+  }
+  
+  end:
+  /* return statement */
+}
+```
+< The goto statement should not be used>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-07 22:24:47  [ main:4907 ] - [ DEBUG ]  // 重构后的代码如下：
+int main(){
+  int i = 0;
+  
+  while (i < 10)
+  {
+    /* do something */
+    if (i == 5)
+    {
+      break;
+    }
+    i++;
+  }
+  
+  /* return statement */
+}
+2023-05-07 22:24:48  [ main:5918 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```enum colors {red, green, blue};```
+< Rule 8.4：枚举类型的标识符应该以字母E开头。>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-07 22:24:51  [ main:8691 ] - [ DEBUG ]  // 重构后的代码如下：
+enum EColors {red, green, blue}; // 枚举类型的标识符以字母E开头
+2023-05-07 22:24:52  [ main:9698 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void function(int a, int b){
+  int c = a + b;
+  
+  if (c < a)
+  {
+    /* do something */
+  }
+  else
+  {
+    /* do something else */
+  }
+}
+```
+< The goto statement should not be used>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-07 22:24:57  [ main:14916 ] - [ DEBUG ]  // 重构后的代码如下：
+void function(int a, int b){
+  int c;
+  if (b > INT_MAX - a) {
+    /* handle error */
+  } else {
+    c = a + b;
+    if (c < a)
+    {
+      /* do something */
+    }
+    else
+    {
+      /* do something else */
+    }
+  }
+}
+
+// 重构说明：
+// 1. 去掉了无用的变量声明
+// 2. 使用了条件语句来避免整数溢出
+// 3. 去掉了不应使用的goto语句
+2023-05-07 22:24:58  [ main:15918 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void function(int *p){
+  *(p + 1) = 10;
+}
+```
+< >
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现

@@ -1,0 +1,206 @@
+2023-05-06 10:13:41  [ main:0 ] - [ DEBUG ]  //int runStandAlonePhysics(int argc, const char* argv[]){
+//    int maxNumber = 0255; // 使用十进制常量代替八进制常量
+//    using namespace msr::airlib;
+//    StandAlonePhysics::testCollision();
+//    return 0;
+//}
+不应使用八进制常量
+2023-05-06 10:13:47  [ main:5396 ] - [ DEBUG ]  int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 173; // 使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+2023-05-06 10:13:47  [ main:5396 ] - [ DEBUG ]      gen.generate(num_samples);不该使用逗号表达式
+2023-05-06 10:13:49  [ main:7497 ] - [ DEBUG ]  // 重构后的代码如下：
+gen.generate(num_samples);
+return;
+2023-05-06 10:26:08  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+将重构的代码同样以```包裹返回
+```int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 0255; // 使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+```
+<不应使用八进制常量>
+
+2023-05-06 10:26:12  [ main:4117 ] - [ DEBUG ]  ```int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 173; // 使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+```
+2023-05-06 10:27:36  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+将重构的代码同样以```包裹返回
+```int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 0255; // 使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+```
+<不应使用八进制常量>
+
+2023-05-06 10:27:40  [ main:4086 ] - [ DEBUG ]  ```int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 255; // 使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+```
+2023-05-06 10:31:18  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+将重构的代码同样以```包裹返回
+```int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 0255; // 使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+```
+<不应使用八进制常量>
+
+2023-05-06 10:31:23  [ main:4679 ] - [ DEBUG ]  ```int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 255; // 使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+```
+2023-05-06 10:31:23  [ main:4680 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+将重构的代码同样以```包裹返回
+```    return testFun(a*c);```
+<Rule Required 17.2: Functions shall not call themselves, either directly or indirectly.>
+
+2023-05-06 10:31:30  [ main:12060 ] - [ DEBUG ]  ```java
+// 重构后的代码
+public int testFun(int a) {
+    return helperFun(a, 1);
+}
+
+private int helperFun(int a, int c) {
+    return a * c;
+}
+```
+```java
+// 重构说明
+// 1. 将原来的函数拆分成两个函数，避免函数直接或间接地调用自身
+// 2. 将helperFun函数设置为私有函数，避免在其他地方被调用
+// 3. 函数名采用驼峰命名法
+// 4. 函数参数采用有意义的变量名
+// 5. 函数返回值采用显式的return语句
+```
+2023-05-06 10:33:36  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+将重构的代码同样以```包裹返回
+```int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 0255; // 使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+```
+<不应使用八进制常量>
+
+2023-05-06 10:33:40  [ main:4257 ] - [ DEBUG ]  ```int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 173; // 使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+```
+2023-05-06 10:33:40  [ main:4258 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+将重构的代码同样以```包裹返回
+```    return testFun(a*c);```
+<Rule Required 17.2: Functions shall not call themselves, either directly or indirectly.>
+
+2023-05-06 10:33:45  [ main:8866 ] - [ DEBUG ]  ```java
+return calculate(a, c);
+
+private int calculate(int a, int c) {
+    return a * c;
+}
+```
+<Rule Required 17.2: Functions shall not call themselves, either directly or indirectly.> 
+
+重构后的代码将原本的递归调用改为了使用一个新的私有方法进行计算，避免了函数直接或间接地调用自身的情况。
+2023-05-06 10:50:23  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+将重构的代码同样以```包裹返回
+```int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 0255; // 使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+```
+<不应使用八进制常量>
+
+2023-05-06 10:50:28  [ main:4768 ] - [ DEBUG ]  ```int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 173; // 使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+```
+2023-05-06 10:50:28  [ main:4769 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+将重构的代码同样以```包裹返回
+```int testFun(int c){
+    int a=10;
+    return testFun(a*c);
+}
+```
+<Rule Required 17.2: Functions shall not call themselves, either directly or indirectly.>
+
+2023-05-06 10:50:31  [ main:7971 ] - [ DEBUG ]  ```java
+int testFun(int c){
+    int a=10;
+    int result = a*c;
+    return result;
+}
+// 重构后的代码避免了函数直接或间接地调用自身，符合MISRA规则17.2
+2023-05-06 10:52:42  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 0255; // 使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+```
+<不应使用八进制常量>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-06 10:52:46  [ main:4050 ] - [ DEBUG ]  // 使用十进制常量代替八进制常量
+int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 255;
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+2023-05-06 10:52:46  [ main:4051 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+int testFun(int c){
+    int a=10;
+    return testFun(a*c);
+}
+```
+<Rule Required 17.2: Functions shall not call themselves, either directly or indirectly.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-06 10:52:50  [ main:7693 ] - [ DEBUG ]  // 重构后的代码如下，避免了函数直接或间接地调用自身
+int testFun(int c){
+    int a=10;
+    int result = a*c;
+    return testFunHelper(result);
+}
+
+int testFunHelper(int result) {
+    return result;
+}

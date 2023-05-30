@@ -1,0 +1,316 @@
+2023-04-26 18:22:03  [ main:0 ] - [ DEBUG ]  public class Test {
+    private String name;
+    private Vector<Order> orders = new Vector<Order>();
+
+}
+
+private double calculateTotalAmount() {
+    double totalAmount = 0;
+    for (Order order : orders) {
+        totalAmount += order.getAmount();
+    }
+    return totalAmount;
+}
+
+private void printDetails(double totalAmount) {
+    System.out.println("name:" + name);
+    System.out.println("amount:" + totalAmount);
+}
+totalAmount += order.getAmount();
+    }
+    return totalAmount;
+}
+
+private void printDetails(double totalAmount) {
+    System.out.println("name:" + name);
+    System.out.println("amount:" + totalAmount);
+}
+以下是重构后的代码：
+
+public void printOwing() {
+    printBanner();
+    double totalAmount = calculateTotalAmount();
+    printDetails(totalAmount);
+}
+
+private void printBanner() {
+    System.out.println("****************");
+    System.out.println("*****customer Owes *****");
+    System.out.println("****************");
+}
+
+private double calculateTotalAmount() {
+    Enumeration env = orders.elements();
+    double totalAmount = 0.0;
+    while (env.hasMoreElements()) {
+        Order order = (Order) env.nextElement();
+        totalAmount += order.getAmount();
+    }
+    return totalAmount;
+}
+
+private void printDetails(double totalAmount) {
+    Sy stem.out.println("name:" + name);
+    System.out.println("amount:" + totalAmount);
+    // other details to be printed
+} 
+
+    public void printOwing() {
+        //print banner
+        System.out.println("****************");
+        System.out.println("*****customer Owes *****");
+        System.out.println("****************");
+
+        //calculate totalAmount
+        Enumeration env = orders.elements();
+        double totalAmount = 0.0;
+        while (env.hasMoreElements()) {
+            Order order = (Order) env.nextElement();
+            totalAmount += order.getAmout();
+        }
+
+        //print details
+        System.out.println("name:" + name);
+        System.out.println("amount:" + totalAmount);
+        ......
+    }
+}
+
+2023-04-26 18:25:10  [ main:0 ] - [ DEBUG ]  public class Test {
+    private String name;
+    private Vector<Order> orders = new Vector<Order>();
+
+public void printOwing() {
+    //print banner
+    System.out.println("****************");
+    System.out.println("*****Customer Owes*****");
+    System.out.println("****************");
+
+    //calculate totalAmount
+    double totalAmount = 0.0;
+    for (Order order : orders) {
+        totalAmount += order.getAmount();
+    }
+
+    //print details
+    System.out.println("name: " + name);
+    System.out.println("amount: " + totalAmount);
+}
+    public void printOwing() {
+        //print banner
+        System.out.println("****************");
+        System.out.println("*****customer Owes *****");
+        System.out.println("****************");
+
+        //calculate totalAmount
+        Enumeration env = orders.elements();
+        double totalAmount = 0.0;
+        while (env.hasMoreElements()) {
+            Order order = (Order) env.nextElement();
+            totalAmount += order.getAmout();
+        }
+
+        //print details
+        System.out.println("name:" + name);
+        System.out.println("amount:" + totalAmount);
+    }
+}
+
+2023-04-26 18:34:39  [ main:0 ] - [ DEBUG ]  这段代码没有异味，是一个简单的Java类，其中包含了两个方法printGoods和printPoints，分别用于打印商品和积分。
+2023-04-26 18:34:39  [ main:1 ] - [ DEBUG ]  Class A{
+public void printOrder(){
+        System.out.println("订单");
+        }
+这段代码没有异味，是一个简单的Java类，其中包含了两个方法printGoods和printPoints，分别用于打印商品和积分。
+
+public void printGoods(){
+        System.out.println("商品");
+        }
+
+public void printPoints(){
+        System.out.println("积分");
+        }
+}
+
+2023-04-26 18:37:10  [ main:0 ] - [ DEBUG ]  可以考虑使用单一职责原则，将不同的功能拆分成不同的类。
+
+例如，可以将订单、商品、积分分别拆分成三个类，每个类只负责自己的功能，避免一个类过于庞大。
+
+Class Order{
+    public void printOrder(){
+        System.out.println("订单");
+    }
+}
+
+Class Goods{
+    public void printGoods(){
+        System.out.println("商品");
+    }
+}
+
+Class Points{
+    public void printPoints(){
+        System.out.println("积分");
+    }
+}
+2023-04-26 18:37:10  [ main:1 ] - [ DEBUG ]  可以考虑使用单一职责原则，将不同的功能拆分成不同的类。
+
+例如，可以将订单、商品、积分分别拆分成三个类，每个类只负责自己的功能，避免一个类过于庞大。
+
+Class Order{
+    public void printOrder(){
+        System.out.println("订单");
+    }
+}
+
+Class Goods{
+    public void printGoods(){
+        System.out.println("商品");
+    }
+}
+
+Class Points{
+    public void printPoints(){
+        System.out.println("积分");
+    }
+}
+Class A{
+public void printOrder(){
+        System.out.println("订单");
+        }
+
+public void printGoods(){
+        System.out.println("商品");
+        }
+
+public void printPoints(){
+        System.out.println("积分");
+        }
+}
+
+2023-04-26 18:41:35  [ main:0 ] - [ DEBUG ]  可以考虑使用单一职责原则，将不同的功能拆分成不同的类。
+
+例如，可以将订单、商品、积分分别定义为不同的类，每个类只负责自己的功能，避免一个类过于庞大。
+
+示例代码：
+
+class Order {
+    public void printOrder() {
+        System.out.println("订单");
+    }
+}
+
+class Goods {
+    public void printGoods() {
+        System.out.println("商品");
+    }
+}
+
+class Points {
+    public void printPoints() {
+        System.out.println("积分");
+    }
+}
+2023-04-26 18:43:32  [ main:0 ] - [ DEBUG ]  可以考虑使用单一职责原则，将不同的功能拆分成不同的类。
+
+例如，可以将订单、商品、积分分别定义为不同的类，每个类只负责自己的功能，避免一个类过于庞大。
+
+Class Order{
+    public void printOrder(){
+        System.out.println("订单");
+    }
+}
+
+Class Goods{
+    public void printGoods(){
+        System.out.println("商品");
+    }
+}
+
+Class Points{
+    public void printPoints(){
+        System.out.println("积分");
+    }
+}
+2023-04-26 18:44:56  [ main:0 ] - [ DEBUG ]  Class A{
+public void printOrder(){
+        System.out.println("订单");
+        }
+}
+
+Class B{
+public void printGoods(){
+        System.out.println("商品");
+        }
+}
+
+Class C{
+public void printPoints(){
+        System.out.println("积分");
+        }
+}
+2023-04-26 19:07:50  [ main:0 ] - [ DEBUG ]  Class A{
+    public void printOrder(){
+        System.out.println("订单");
+    }
+}
+
+Class B{
+    public void printGoods(){
+        System.out.println("商品");
+    }
+}
+
+Class C{
+    public void printPoints(){
+        System.out.println("积分");
+    }
+}
+2023-04-26 20:05:36  [ main:0 ] - [ DEBUG ]  // Class C是一个过大的类，需要进行拆分和重构
+// 可以考虑将其中的一些方法提取出来，放到其他类中
+// 比如将printOrder()方法放到Class A中，将printGoods()方法放到Class B中
+// 这样可以使每个类的职责更加清晰，代码更易于维护和扩展
+2023-04-26 20:08:06  [ main:0 ] - [ DEBUG ]  这个类存在过大的问题，因为它包含了三个不同的方法，每个方法都有不同的职责。这违反了单一职责原则，应该将这些方法分别放在不同的类中。
+
+重构后的代码如下：
+
+class Order {
+    public void printOrder() {
+        System.out.println("订单");
+    }
+}
+
+class Goods {
+    public void printGoods() {
+        System.out.println("商品");
+    }
+}
+
+class Points {
+    public void printPoints() {
+        System.out.println("积分");
+    }
+}
+
+这样，每个类都只有一个职责，代码更加清晰易懂，也更容易维护。
+2023-04-26 20:11:51  [ main:0 ] - [ DEBUG ]  开始工作
+2023-04-26 20:12:13  [ main:0 ] - [ DEBUG ]  // 重构后的代码
+class A {
+    public void printOrder() {
+        System.out.println("订单");
+    }
+}
+
+class B extends A {
+    public void printGoods() {
+        System.out.println("商品");
+    }
+}
+
+class C extends B {
+    public void printPoints() {
+        System.out.println("积分");
+    }
+}
+
+// 通过继承的方式将原来的 A 类拆分成了三个类 A、B、C，每个类只负责一个功能，避免了过大的类。

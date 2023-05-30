@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="misra-c2012-8.1" severity="style" msg="Rule Required 8.1: Types shall be explicitly specified." verbose="Rule Required 8.1: Types shall be explicitly specified." file0="C:\Users\zyc\Desktop\工作\测试数据\2\Rule_8.1_Required.c.dump">
+            <location file="C:\Users\zyc\Desktop\工作\测试数据\2\Rule_2.3_Advisory.c" line="1" column="0"/>
+        </error>
+
+    </errors>
+</results>

@@ -1,0 +1,67 @@
+2023-05-03 10:16:43  [ main:0 ] - [ DEBUG ]  ```java
+int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber=255; //使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+```
+2023-05-03 10:22:20  [ main:0 ] - [ DEBUG ]  int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber=0255; //使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+不应使用八进制常量
+2023-05-03 10:22:24  [ main:3945 ] - [ DEBUG ]  // 重构后的代码
+int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber=255; //使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+2023-05-03 10:32:20  [ main:0 ] - [ DEBUG ]  int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber=255; //使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+不应使用八进制常量
+2023-05-03 10:32:23  [ main:3442 ] - [ DEBUG ]  // 重构后的代码
+int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 255; // 使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+2023-05-03 10:32:23  [ main:3443 ] - [ DEBUG ]  不该使用逗号表达式
+2023-05-03 10:32:26  [ main:6235 ] - [ DEBUG ]  // 重构前代码
+int a = 1, b = 2, c = 3;
+a = b++, c++;
+
+// 重构后代码
+int a = 1;
+int b = 2;
+int c = 3;
+b++;
+c++;
+a = b;
+2023-05-03 10:51:52  [ main:1 ] - [ DEBUG ]  int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 0255; // 使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+不应使用八进制常量
+2023-05-03 10:52:18  [ main:26118 ] - [ DEBUG ]  // 重构后的代码
+int runStandAlonePhysics(int argc, const char* argv[]){
+    int maxNumber = 255; // 使用十进制常量代替八进制常量
+    using namespace msr::airlib;
+    StandAlonePhysics::testCollision();
+    return 0;
+}
+2023-05-03 10:52:24  [ main:31726 ] - [ DEBUG ]      int ts=num_samples+1,num_samples+2,num_samples++;不该使用逗号表达式
+2023-05-03 10:52:42  [ main:50033 ] - [ DEBUG ]  // 重构后的代码
+int ts = num_samples + 1;
+num_samples++;
+int ts2 = num_samples + 2;

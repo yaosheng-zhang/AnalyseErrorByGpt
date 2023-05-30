@@ -1,0 +1,598 @@
+2023-05-21 21:04:08  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4() {```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:04:19  [ main:10390 ] - [ DEBUG ]  // 重构后的代码如下：
+void test4(void) {
+    const int num = 10;
+    int arr[num];
+    for (int i = 0; i < num; i++) {
+        arr[i] = i + 1;
+    }
+} 
+
+// 重构说明：
+// 1. 移除了使用八进制常量的代码，遵守了MISRA规则7.1
+// 2. 函数类型改为了原型形式，遵守了MISRA规则8.2
+// 3. 添加了函数声明，遵守了MISRA规则8.4
+// 4. 将数组大小定义为常量，遵守了MISRA规则8.3
+2023-05-21 21:04:21  [ main:12392 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test1() {```
+<Rule Required 7.2: A "u" or "U" suffix shall be applied to all integer constants that are represented in an unsigned type.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:04:23  [ main:14734 ] - [ DEBUG ]  // 重构后的代码如下：
+void test1(void) {
+    const unsigned int num = 10u;
+    extern int func(int);
+}
+2023-05-21 21:04:25  [ main:16740 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test2() {```
+<Rule Required 7.3: The lowercase character 'l' shall not be used in a literal suffix.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:04:33  [ main:24312 ] - [ DEBUG ]  // 重构后的代码如下：
+void test2(void) {
+    uint32_t value = 100U;
+    uint32_t *ptr = &value;
+} 
+
+// 重构说明：
+// 1. 将函数声明改为了原型形式，即void test2(void)，符合MISRA规则8.2。
+// 2. 将字面值后缀中的'l'改为了'U'，符合MISRA规则7.3。
+// 3. 在函数内部定义了一个指向无符号32位整型的指针ptr，并将其初始化为value的地址。同时，为了符合MISRA规则8.4，确保在定义ptr之前已经声明了value。
+2023-05-21 21:04:35  [ main:26326 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test3() {```
+<Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:05:21  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4(){```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:17:29  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4(){```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:17:31  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4(){```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:19:32  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4(){```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:23:27  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4(){```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:24:16  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4(){```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:26:47  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4(){```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:27:13  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test1() {```
+<Rule Required 8.2: Function types shall be in prototype form with named parameters.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:27:14  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test1() {```
+<Rule Required 8.2: Function types shall be in prototype form with named parameters.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:27:23  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test1() {```
+<Rule Required 8.2: Function types shall be in prototype form with named parameters.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:28:23  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test1() {```
+<Rule Required 8.2: Function types shall be in prototype form with named parameters.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:28:25  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test1() {
+    static const unsigned char t[] = {
+    0, 0x1db71064, 0x3b6e20c8, 0x26d930ac, 0x76dc4190, 0x6b6b51f4, 0x4db26158, 0x5005713c,
+    /* CRC32 Table */
+    0xedb88320, 0xf00f9344, 0xd6d6a3e8, 0xcb61b38c, 0x9b64c2b0, 0x86d3d2d4, 0xa00ae278, 0xbdbdf21c
+};
+
+}
+```
+<Rule Required 8.2: Function types shall be in prototype form with named parameters.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:28:40  [ main:15207 ] - [ DEBUG ]  // 重构后的代码
+void test1(void) {
+    static const unsigned char t[] = {
+        0, 0x1d, 0xb7, 0x10, 0x64, 0x3b, 0x6e, 0x20,
+        0xc8, 0x26, 0xd9, 0x30, 0xac, 0x76, 0xdc, 0x41,
+        0x90, 0x6b, 0x6b, 0x51, 0xf4, 0x4d, 0xb2, 0x61,
+        0x58, 0x50, 0x05, 0x71, 0x3c, 0xed, 0xb8, 0x83,
+        0x20, 0xf0, 0x0f, 0x93, 0x44, 0xd6, 0xd6, 0xa3,
+        0xe8, 0xcb, 0x61, 0xb3, 0x8c, 0x9b, 0xc2, 0xb0,
+        0xd4, 0x86, 0xd3, 0xd2, 0x78, 0xa0, 0x0a, 0xe2,
+        0x78, 0xbd, 0xbf, 0x21, 0x1c
+    };
+}
+
+// Rule Required 8.2: Function types shall be in prototype form with named parameters.
+2023-05-21 21:29:42  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4(){
+    int a = 010;
+    return 0;
+}
+```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:29:49  [ main:6423 ] - [ DEBUG ]  // 重构后的代码
+int test4(void){
+    int a = 8;
+    return 0;
+}
+
+// Rule Required 7.1: Octal constants shall not be used. 
+// 将八进制常量010改为十进制常量8
+
+// Rule Required 8.2: Function types shall be in prototype form with named parameters.
+// 将函数声明改为函数原型声明，即加上(void)
+
+// Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.
+// 在函数定义前加上函数原型声明
+2023-05-21 21:29:51  [ main:8429 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test1() {
+    static const unsigned char t[] = {
+    0, 0x1db71064, 0x3b6e20c8, 0x26d930ac, 0x76dc4190, 0x6b6b51f4, 0x4db26158, 0x5005713c,
+    /* CRC32 Table */
+    0xedb88320, 0xf00f9344, 0xd6d6a3e8, 0xcb61b38c, 0x9b64c2b0, 0x86d3d2d4, 0xa00ae278, 0xbdbdf21c
+};
+
+}
+```
+<Rule Required 7.2: A "u" or "U" suffix shall be applied to all integer constants that are represented in an unsigned type.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:29:59  [ main:16254 ] - [ DEBUG ]  // 重构后的代码
+void test1(void) {
+    static const unsigned int t[] = {
+        0U, 0x1db71064U, 0x3b6e20c8U, 0x26d930acU, 0x76dc4190U, 0x6b6b51f4U, 0x4db26158U, 0x5005713cU,
+        /* CRC32 Table */
+        0xedb88320U, 0xf00f9344U, 0xd6d6a3e8U, 0xcb61b38cU, 0x9b64c2b0U, 0x86d3d2d4U, 0xa00ae278U, 0xbdbdf21cU
+    };
+}
+2023-05-21 21:30:01  [ main:18254 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test2() {
+    long long number5 = 50l; // Valid: 'l' used as a literal suffix for long long
+}
+```
+<Rule Required 7.3: The lowercase character 'l' shall not be used in a literal suffix.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:30:04  [ main:21820 ] - [ DEBUG ]  // 重构后的代码
+void test2(void) {
+    long long number5 = 50LL; // Valid: 'LL' used as a literal suffix for long long
+}
+2023-05-21 21:30:06  [ main:23825 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test3(){
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:30:10  [ main:27999 ] - [ DEBUG ]  // 重构后的代码
+int test3(void) {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 重构后的代码，无违反规则
+        (void)b; // 防止未使用变量的警告
+    }
+    return 0;
+}
+2023-05-21 21:30:12  [ main:30009 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test5() {
+label_1:
+    goto label_1;
+label_1:
+    return 0;
+}
+```
+<Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.&&Rule Advisory 15.1: The goto statement should not be used.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:30:17  [ main:34729 ] - [ DEBUG ]  // 重构后的代码如下：
+int test5(void) {
+    while(1) {
+        // do something
+    }
+    return 0;
+}
+
+// Rule Required 8.2: 函数类型应以原型形式具有命名参数。
+// Rule Required 8.4: 在定义具有外部链接的对象或函数时，应可见兼容声明。
+// Rule Advisory 15.1: 不应使用goto语句。
+2023-05-21 21:32:03  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4(){
+    int a = 010;
+    return 0;
+}
+```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:32:13  [ main:9887 ] - [ DEBUG ]  // 重构后的代码
+int test4(void){
+    int a = 8;
+    return 0;
+}
+
+// Rule Required 7.1: Octal constants shall not be used. 
+// 规则7.1：不得使用八进制常量。
+// 将八进制常量010改为十进制常量8。
+
+// Rule Required 8.2: Function types shall be in prototype form with named parameters.
+// 规则8.2：函数类型应以原型形式和命名参数形式表示。
+// 将函数声明改为int test4(void)。
+
+// Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.
+// 规则8.4：在定义具有外部链接的对象或函数时，应可见兼容声明。
+// 在代码中未涉及到此规则，无需进行修改。
+2023-05-21 21:32:15  [ main:11901 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test1() {
+    static const unsigned char t[] = {
+    0, 0x1db71064, 0x3b6e20c8, 0x26d930ac, 0x76dc4190, 0x6b6b51f4, 0x4db26158, 0x5005713c,
+    /* CRC32 Table */
+    0xedb88320, 0xf00f9344, 0xd6d6a3e8, 0xcb61b38c, 0x9b64c2b0, 0x86d3d2d4, 0xa00ae278, 0xbdbdf21c
+};
+
+}
+```
+<Rule Required 7.2: A "u" or "U" suffix shall be applied to all integer constants that are represented in an unsigned type.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:32:23  [ main:20745 ] - [ DEBUG ]  // 重构后的代码
+void test1(void) {
+    static const unsigned int t[] = {
+        0U, 0x1db71064U, 0x3b6e20c8U, 0x26d930acU, 0x76dc4190U, 0x6b6b51f4U, 0x4db26158U, 0x5005713cU,
+        /* CRC32 Table */
+        0xedb88320U, 0xf00f9344U, 0xd6d6a3e8U, 0xcb61b38cU, 0x9b64c2b0U, 0x86d3d2d4U, 0xa00ae278U, 0xbdbdf21cU
+    };
+}
+2023-05-21 21:32:25  [ main:22756 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test2() {
+    long long number5 = 50l; // Valid: 'l' used as a literal suffix for long long
+}
+```
+<Rule Required 7.3: The lowercase character 'l' shall not be used in a literal suffix.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:32:31  [ main:28007 ] - [ DEBUG ]  // 重构后的代码
+void test2(void) {
+    long long number5 = 50LL; // Valid: 'LL' used as a literal suffix for long long
+}
+
+// Rule Required 7.3: The lowercase character 'l' shall not be used in a literal suffix.
+// Rule Required 8.2: Function types shall be in prototype form with named parameters.
+// Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.
+2023-05-21 21:32:33  [ main:30021 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test3(){
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:32:36  [ main:33456 ] - [ DEBUG ]  // 重构后的代码
+int test3(void) {
+    int a = 0;
+    if (a > 0) {
+        int b = 1;
+        (void)b; // 使用无操作语句来消除未使用变量的警告
+    }
+    return 0;
+}
+2023-05-21 21:32:38  [ main:35460 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test5() {
+label_1:
+    goto label_1;
+label_1:
+    return 0;
+}
+```
+<Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.&&Rule Advisory 15.1: The goto statement should not be used.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:32:43  [ main:40011 ] - [ DEBUG ]  // 重构后的代码如下：
+int test5(void) {
+    while(1) {
+        // do something
+    }
+    return 0;
+}
+
+// Rule Required 8.2: 函数类型应以带有命名参数的原型形式表示。
+// Rule Required 8.4: 在定义具有外部链接的对象或函数时，应可见兼容声明。
+// Rule Advisory 15.1: 不应使用goto语句。
+2023-05-21 21:41:33  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4(){
+    int a = 010;
+    return 0;
+}
+```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:41:42  [ main:8710 ] - [ DEBUG ]  // 重构后的代码
+int test4(void){
+    int a = 8;
+    return 0;
+}
+
+// Rule Required 7.1: Octal constants shall not be used. 
+// 将八进制常量010改为十进制常量8
+
+// Rule Required 8.2: Function types shall be in prototype form with named parameters.
+// 将函数声明改为函数原型声明，即加上(void)
+
+// Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.
+// 在函数定义前加上函数原型声明
+2023-05-21 21:41:44  [ main:10713 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test1() {
+    static const unsigned char t[] = {
+    0, 0x1db71064, 0x3b6e20c8, 0x26d930ac, 0x76dc4190, 0x6b6b51f4, 0x4db26158, 0x5005713c,
+    /* CRC32 Table */
+    0xedb88320, 0xf00f9344, 0xd6d6a3e8, 0xcb61b38c, 0x9b64c2b0, 0x86d3d2d4, 0xa00ae278, 0xbdbdf21c
+};
+
+}
+```
+<Rule Required 7.2: A "u" or "U" suffix shall be applied to all integer constants that are represented in an unsigned type.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:41:51  [ main:18297 ] - [ DEBUG ]  // 重构后的代码
+void test1(void) {
+    static const unsigned int t[] = {
+        0U, 0x1db71064U, 0x3b6e20c8U, 0x26d930acU, 0x76dc4190U, 0x6b6b51f4U, 0x4db26158U, 0x5005713cU,
+        /* CRC32 Table */
+        0xedb88320U, 0xf00f9344U, 0xd6d6a3e8U, 0xcb61b38cU, 0x9b64c2b0U, 0x86d3d2d4U, 0xa00ae278U, 0xbdbdf21cU
+    };
+}
+2023-05-21 21:41:53  [ main:20310 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test2() {
+    long long number5 = 50l; // Valid: 'l' used as a literal suffix for long long
+}
+```
+<Rule Required 7.3: The lowercase character 'l' shall not be used in a literal suffix.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:41:59  [ main:25973 ] - [ DEBUG ]  // 重构后的代码
+void test2(void) {
+    long long number5 = 50LL; // Valid: 'LL' used as a literal suffix for long long
+}
+
+// Rule Required 7.3: The lowercase character 'l' shall not be used in a literal suffix.
+// Rule Required 8.2: Function types shall be in prototype form with named parameters.
+// Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.
+2023-05-21 21:42:01  [ main:27975 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test3(){
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:42:05  [ main:32124 ] - [ DEBUG ]  // 重构后的代码
+int test3(void) {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 重构后的代码，可访问
+        (void)b; // 重构后的代码，消除未使用变量的警告
+    }
+    return 0;
+}
+2023-05-21 21:42:07  [ main:34134 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test5() {
+label_1:
+    goto label_1;
+label_1:
+    return 0;
+}
+```
+<Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.&&Rule Advisory 15.1: The goto statement should not be used.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:42:13  [ main:39708 ] - [ DEBUG ]  // 重构后的代码如下：
+int test5(void) {
+    while(1) {
+        // do something
+    }
+    return 0;
+}
+
+// Rule Required 8.2: 函数类型应以具名参数的原型形式出现。
+// Rule Required 8.4: 在定义具有外部链接的对象或函数时，应可见兼容声明。
+// Rule Advisory 15.1: 不应使用goto语句。
+2023-05-21 21:44:00  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4(){
+    int a = 010;
+    return 0;
+}
+```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:44:09  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4(){
+    int a = 010;
+    return 0;
+}
+```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:44:15  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4(){
+    int a = 010;
+    return 0;
+}
+```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:44:16  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4(){
+    int a = 010;
+    return 0;
+}
+```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:44:23  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4(){
+    int a = 010;
+    return 0;
+}
+```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:48:38  [ main:255219 ] - [ DEBUG ]  // 重构后的代码
+int test4(void){
+    int a = 8;
+    return 0;
+}
+
+// Rule Required 7.1: Octal constants shall not be used. 
+// 将八进制常量010改为十进制常量8
+
+// Rule Required 8.2: Function types shall be in prototype form with named parameters.
+// 将函数声明改为函数原型声明，即加上(void)
+
+// Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.
+// 在函数定义前加上函数原型声明，以保证函数定义与函数声明的兼容性
+2023-05-21 21:48:41  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test4(){
+    int a = 010;
+    return 0;
+}
+```
+<Rule Required 7.1: Octal constants shall not be used.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:48:49  [ main:7269 ] - [ DEBUG ]  // 重构后的代码
+int test4(void){
+    int a = 8;
+    return 0;
+}
+
+// Rule Required 7.1: Octal constants shall not be used. 
+// 将八进制常量010改为十进制常量8
+
+// Rule Required 8.2: Function types shall be in prototype form with named parameters.
+// 将函数声明改为带有参数名的原型形式
+
+// Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.
+// 在定义具有外部链接的对象或函数时，必须可见兼容的声明。
+2023-05-21 21:48:51  [ main:9279 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test1() {
+    static const unsigned char t[] = {
+    0, 0x1db71064, 0x3b6e20c8, 0x26d930ac, 0x76dc4190, 0x6b6b51f4, 0x4db26158, 0x5005713c,
+    /* CRC32 Table */
+    0xedb88320, 0xf00f9344, 0xd6d6a3e8, 0xcb61b38c, 0x9b64c2b0, 0x86d3d2d4, 0xa00ae278, 0xbdbdf21c
+};
+
+}
+```
+<Rule Required 7.2: A "u" or "U" suffix shall be applied to all integer constants that are represented in an unsigned type.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:48:59  [ main:17435 ] - [ DEBUG ]  // 重构后的代码
+void test1(void) {
+    static const unsigned int t[] = {
+        0U, 0x1db71064U, 0x3b6e20c8U, 0x26d930acU, 0x76dc4190U, 0x6b6b51f4U, 0x4db26158U, 0x5005713cU,
+        /* CRC32 Table */
+        0xedb88320U, 0xf00f9344U, 0xd6d6a3e8U, 0xcb61b38cU, 0x9b64c2b0U, 0x86d3d2d4U, 0xa00ae278U, 0xbdbdf21cU
+    };
+}
+2023-05-21 21:49:01  [ main:19448 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test2() {
+    long long number5 = 50l; // Valid: 'l' used as a literal suffix for long long
+}
+```
+<Rule Required 7.3: The lowercase character 'l' shall not be used in a literal suffix.&&Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:49:06  [ main:24289 ] - [ DEBUG ]  // 重构后的代码
+void test2(void) {
+    long long number5 = 50LL; // Valid: 'LL' used as a literal suffix for long long
+}
+2023-05-21 21:49:08  [ main:26293 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test3(){
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:49:12  [ main:30734 ] - [ DEBUG ]  // 重构后的代码
+int test3(void) {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 重构后的代码，可访问
+        (void)b; // 重构后的代码，消除未使用变量的警告
+    }
+    return 0;
+}
+2023-05-21 21:49:14  [ main:32748 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```void test5() {
+label_1:
+    goto label_1;
+label_1:
+    return 0;
+}
+```
+<Rule Required 8.2: Function types shall be in prototype form with named parameters.&&Rule Required 8.4: A compatible declaration shall be visible when an object or function with external linkage is defined.&&Rule Advisory 15.1: The goto statement should not be used.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-21 21:49:19  [ main:37316 ] - [ DEBUG ]  // 重构后的代码如下：
+int test5(void) {
+    while(1) {
+        // do something
+    }
+    return 0;
+}
+
+// Rule Required 8.2: 函数类型应以原型形式具有命名参数。
+// Rule Required 8.4: 在定义具有外部链接的对象或函数时，应可见兼容声明。
+// Rule Advisory 15.1: 不应使用goto语句。

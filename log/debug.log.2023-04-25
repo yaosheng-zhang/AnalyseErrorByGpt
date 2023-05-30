@@ -1,0 +1,180 @@
+2023-04-25 14:49:18  [ main:0 ] - [ DEBUG ]  
+2023-04-25 14:51:34  [ main:0 ] - [ DEBUG ]  public class Test {    private String name;    private Vector<Order> orders = new Vector<Order>();new
+what
+    public void printOwing() {        //print banner        System.out.println("****************");        System.out.println("*****customer Owes *****");        System.out.println("****************");        //calculate totalAmount        Enumeration env = orders.elements();        double totalAmount = 0.0;        while (env.hasMoreElements()) {            Order order = (Order) env.nextElement();            totalAmount += order.getAmout();        }        //print details        System.out.println("name:" + name);        System.out.println("amount:" + totalAmount);        ......    }}
+2023-04-25 14:52:20  [ main:0 ] - [ DEBUG ]  
+2023-04-25 14:53:15  [ main:0 ] - [ DEBUG ]  public class Test {
+    private String name;
+    private Vector<Order> orders = new Vector<Order>();
+
+new
+what
+    public void printOwing() {
+        //print banner
+        System.out.println("****************");
+        System.out.println("*****customer Owes *****");
+        System.out.println("****************");
+
+        //calculate totalAmount
+        Enumeration env = orders.elements();
+        double totalAmount = 0.0;
+        while (env.hasMoreElements()) {
+            Order order = (Order) env.nextElement();
+            totalAmount += order.getAmout();
+        }
+
+        //print details
+        System.out.println("name:" + name);
+        System.out.println("amount:" + totalAmount);
+        ......
+    }
+}
+
+2023-04-25 14:57:03  [ main:0 ] - [ DEBUG ]  public class Test {
+    private String name;
+    private Vector<Order> orders = new Vector<Order>();
+
+new
+what
+    public void printOwing() {
+        //print banner
+        System.out.println("****************");
+        System.out.println("*****customer Owes *****");
+        System.out.println("****************");
+
+        //calculate totalAmount
+        Enumeration env = orders.elements();
+        double totalAmount = 0.0;
+        while (env.hasMoreElements()) {
+            Order order = (Order) env.nextElement();
+            totalAmount += order.getAmout();
+        }
+
+        //print details
+        System.out.println("name:" + name);
+        System.out.println("amount:" + totalAmount);
+        ......
+    }
+}
+
+2023-04-25 17:21:32  [ main:0 ] - [ DEBUG ]  public class Test {
+    private String name;
+    private Vector<Order> orders = new Vector<Order>();
+
+以下是重构后的代码：
+
+public void printOwing() {
+    printBanner();
+    double totalAmount = calculateTotalAmount();
+    printDetails(totalAmount);
+}
+
+private void printBanner() {
+    System.out.println("****************");
+    System.out.println("*****customer Owes *****");
+    System.out.println("****************");
+}
+
+private double calculateTotalAmount() {
+    Enumeration env = orders.elements();
+    double totalAmount = 0.0;
+    while (env.hasMoreElements()) {
+        Order order = (Order) env.nextElement();
+        totalAmount += order.getAmount();
+    }
+    return totalAmount;
+}
+
+private void printDetails(double totalAmount) {
+    System.out.println("name:" + name);
+    System.out.println("amount:" + totalAmount);
+    // other details to be printed
+} 
+
+重构后的代码将原本的一个方法拆分成了三个方法，每个方法只负责一个具体的功能，使得代码更加清晰易懂，易于维护。同时，将计算总金额的逻辑提取成一个独立的方法，使得代码的复用性更高。
+    public void printOwing() {
+        //print banner
+        System.out.println("****************");
+        System.out.println("*****customer Owes *****");
+        System.out.println("****************");
+
+        //calculate totalAmount
+        Enumeration env = orders.elements();
+        double totalAmount = 0.0;
+        while (env.hasMoreElements()) {
+            Order order = (Order) env.nextElement();
+            totalAmount += order.getAmout();
+        }
+
+        //print details
+        System.out.println("name:" + name);
+        System.out.println("amount:" + totalAmount);
+        ......
+    }
+}
+
+2023-04-25 19:59:08  [ main:0 ] - [ DEBUG ]  public class Test {
+    private String name;
+    private Vector<Order> orders = new Vector<Order>();
+
+totalAmount += order.getAmount();
+    }
+    return totalAmount;
+}
+
+private void printDetails(double totalAmount) {
+    System.out.println("name:" + name);
+    System.out.println("amount:" + totalAmount);
+}
+以下是重构后的代码：
+
+public void printOwing() {
+    printBanner();
+    double totalAmount = calculateTotalAmount();
+    printDetails(totalAmount);
+}
+
+private void printBanner() {
+    System.out.println("****************");
+    System.out.println("*****customer Owes *****");
+    System.out.println("****************");
+}
+
+private double calculateTotalAmount() {
+    Enumeration env = orders.elements();
+    double totalAmount = 0.0;
+    while (env.hasMoreElements()) {
+        Order order = (Order) env.nextElement();
+        totalAmount += order.getAmount();
+    }
+    return totalAmount;
+}
+
+private void printDetails(double totalAmount) {
+    Sy stem.out.println("name:" + name);
+    System.out.println("amount:" + totalAmount);
+    // other details to be printed
+} 
+
+重构后的代码将原本的一个方法拆分成了三个方法，每个方法只负责一个具体的功能，使得代码更加清晰易懂，易于维护。同时，将计算总金额的逻辑提取成一个独立的方法，使得代码的复用性更高。
+    public void printOwing() {
+        //print banner
+        System.out.println("****************");
+        System.out.println("*****customer Owes *****");
+        System.out.println("****************");
+
+        //calculate totalAmount
+        Enumeration env = orders.elements();
+        double totalAmount = 0.0;
+        while (env.hasMoreElements()) {
+            Order order = (Order) env.nextElement();
+            totalAmount += order.getAmout();
+        }
+
+        //print details
+        System.out.println("name:" + name);
+        System.out.println("amount:" + totalAmount);
+        ......
+    }
+}
+

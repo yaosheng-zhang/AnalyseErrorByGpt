@@ -1,0 +1,458 @@
+2023-05-16 16:39:32  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 16:39:40  [ main:7063 ] - [ DEBUG ]  // 重构后的代码
+int main() {
+    int a = 0;
+    int b = 0; // 将变量b的声明提到if语句外面
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+2023-05-16 17:16:25  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```//int main() {
+//    int a = 0;
+//    if (a > 0) {
+//        int b = 1; // 违反规则，无法访问的代码
+//    }
+//    return 0;
+//}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 17:16:30  [ main:5306 ] - [ DEBUG ]  //int main() {
+    int a = 0;
+    if (a > 0) {
+        //int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+//} 
+
+// 重构后的代码，移除了无法访问的代码，符合MISRA规则2.1
+2023-05-16 17:19:10  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 17:19:40  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 17:19:45  [ main:5194 ] - [ DEBUG ]  // 重构后的代码
+int main() {
+    int a = 0;
+    int b = 0; // 将变量b的声明提到if语句外面
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+2023-05-16 17:26:44  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 17:28:31  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 17:28:36  [ main:4900 ] - [ DEBUG ]  // 重构后的代码
+int main() {
+    int a = 0;
+    int b = 0; // 将变量b的声明提到if语句外面
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+2023-05-16 17:38:13  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 17:38:18  [ main:4794 ] - [ DEBUG ]  // 重构后的代码
+int main() {
+    int a = 0;
+    int b = 0; // 将变量b的声明提到if语句外面
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+2023-05-16 17:38:20  [ main:6808 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 17:38:24  [ main:10994 ] - [ DEBUG ]  // 重构后的代码
+int main() {
+    int a = 0;
+    int b = 0; // 将变量b的声明提到if语句外面
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+2023-05-16 17:39:33  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 17:39:39  [ main:6180 ] - [ DEBUG ]  // 重构后的代码
+int main() {
+    int a = 0;
+    int b = 0; // 将变量b的声明提到if语句外面
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+2023-05-16 17:39:41  [ main:8187 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 17:39:46  [ main:13214 ] - [ DEBUG ]  // 重构后的代码
+int main() {
+    int a = 0;
+    int b = 0; // 将变量b的声明提到if语句外面
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+2023-05-16 17:41:07  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 17:44:28  [ main:201731 ] - [ DEBUG ]  // 重构后的代码
+int main() {
+    int a = 0;
+    int b = 0; // 将变量b的声明提到if语句外面
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+2023-05-16 17:44:36  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 17:44:41  [ main:4976 ] - [ DEBUG ]  // 重构后的代码
+int main() {
+    int a = 0;
+    int b = 0; // 将变量b的声明提到if语句外面
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+2023-05-16 17:44:43  [ main:6981 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 17:44:47  [ main:11103 ] - [ DEBUG ]  // 重构后的代码
+int main() {
+    int a = 0;
+    int b = 0; // 将变量b的声明提到if语句外面
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+2023-05-16 17:45:24  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 17:47:26  [ main:122149 ] - [ DEBUG ]  // 重构后的代码
+int main() {
+    int a = 0;
+    int b = 0; // 将变量b的声明提到if语句外面
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+2023-05-16 17:47:44  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 17:51:15  [ main:210565 ] - [ DEBUG ]  // 重构后的代码
+int main() {
+    int a = 0;
+    int b = 0; // 将变量b的声明提到if语句外面
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+2023-05-16 17:51:42  [ main:237883 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 17:51:47  [ main:243394 ] - [ DEBUG ]  // 重构后的代码
+int main() {
+    int a = 0;
+    if (a > 0) {
+        // int b = 1; // 已删除无法访问的代码
+    }
+    return 0;
+}
+2023-05-16 20:17:03  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 20:33:44  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 21:12:31  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```null```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 21:13:15  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 21:13:20  [ main:5012 ] - [ DEBUG ]  // 重构后的代码
+int main() {
+    int a = 0;
+    int b = 0; // 将变量b的声明提到if语句外面
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+2023-05-16 21:13:22  [ main:7016 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        int b = 1; // 违反规则，无法访问的代码
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 21:13:26  [ main:11363 ] - [ DEBUG ]  // 重构后的代码
+int main() {
+    int a = 0;
+    int b = 0; // 将变量b的声明提到if语句外面
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+2023-05-16 21:51:45  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    int b = 0; // 将变量b的声明提到if语句外面
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 21:51:50  [ main:4327 ] - [ DEBUG ]  // 将变量b的声明提到if语句外面
+int a = 0;
+int b; 
+
+if (a > 0) {
+    // 将变量b的赋值放到if语句里面
+    b = 1; 
+}
+
+return 0;
+2023-05-16 21:51:52  [ main:6333 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 21:56:49  [ main:0 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 21:56:55  [ main:5118 ] - [ DEBUG ]  // 重构后的代码如下：
+int main() {
+    int a = 0;
+    int b = 0; // 初始化变量b
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+2023-05-16 21:56:57  [ main:7119 ] - [ DEBUG ]   你的任务是将下面的代码根据MISRA的要求进行重构
+ 代码以```包裹 违反的MISRA规则以<>包裹 
+```int main() {
+    int a = 0;
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}
+```
+<Rule Required 2.1: A project shall not contain unreachable code.>
+返回的结果中只允许出现重构后的代码，非代码部分必须以JAVA注释 // 的方式出现
+2023-05-16 21:57:01  [ main:11289 ] - [ DEBUG ]  // 重构后的代码如下：
+int main() {
+    int a = 0;
+    int b = 0; // 初始化变量b
+    if (a > 0) {
+        b = 1; // 将变量b的赋值放到if语句里面
+    }
+    return 0;
+}

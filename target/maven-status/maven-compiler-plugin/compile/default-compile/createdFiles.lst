@@ -1,0 +1,7 @@
+chatGPT\Generator.class
+utils\FileCopier.class
+utils\LogUtils.class
+utils\CppMethodExtractor.class
+utils\XmlExporter.class
+chatGPT\CodeGetter.class
+entity\Error.class
